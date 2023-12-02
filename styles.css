@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "Candheld-Regular";
+    src: url("candheld.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: url('sky.jpg');
+    background-size: 100%;
+}
+
+.menu {
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    font-family: serif;
+}
+
+.text-top, .text-down {
+    margin: 0 12px;
+    font-family: "Candheld-Regular", monospace;
+    font-size: calc(32px + 6vh);
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 0.8em;
+}
+
+.text-top {
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: black;
+}
+
+.text-down {
+    color: white;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    flex: 1;
+    margin: 24px;
+    padding: 12px;
+    font-family: "Candheld-Regular", monospace;
+    font-size: calc(8px + 2vh);
+    text-transform: uppercase;
+    color: white;
+    background: none;
+    border: none;
+    border-radius: 16px;
+}
+
+button:active {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .btns {
+        flex-direction: column;
+    }
+}
